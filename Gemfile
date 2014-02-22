@@ -1,5 +1,7 @@
 source 'https://rubygems.org'
 
+ruby '2.1.0'
+
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.0.2'
 
@@ -16,7 +18,7 @@ gem 'uglifier', '>= 1.3.0'
 gem 'coffee-rails', '~> 4.0.0'
 
 # See https://github.com/sstephenson/execjs#readme for more supported runtimes
-# gem 'therubyracer', platforms: :ruby
+gem 'therubyracer', platforms: :ruby
 
 # Use jquery as the JavaScript library
 gem 'jquery-rails'
@@ -24,8 +26,29 @@ gem 'jquery-rails'
 # Turbolinks makes following links in your web application faster. Read more: https://github.com/rails/turbolinks
 gem 'turbolinks'
 
+gem 'jquery-turbolinks'
+
 # Build JSON APIs with ease. Read more: https://github.com/rails/jbuilder
 gem 'jbuilder', '~> 1.2'
+
+group :development, :test do
+  # Rails application preloader
+  gem 'spring'
+
+  # pry
+  gem 'pry-rails'
+  gem 'pry-coolline'
+  gem 'pry-byebug'
+  gem 'pry-doc'
+  gem 'hirb'
+  gem 'hirb-unicode'
+  gem 'awesome_print'
+
+  # Rspec
+  gem 'rspec-rails'
+  gem "factory_girl_rails"
+  gem 'database_rewinder'
+end
 
 group :doc do
   # bundle exec rake doc:rails generates the API under doc/api.
