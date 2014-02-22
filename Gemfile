@@ -31,6 +31,10 @@ gem 'jquery-turbolinks'
 # Build JSON APIs with ease. Read more: https://github.com/rails/jbuilder
 gem 'jbuilder', '~> 1.2'
 
+gem 'devise'
+
+gem 'bootstrap-sass-rails'
+
 group :development, :test do
   # Rails application preloader
   gem 'spring'
@@ -48,6 +52,11 @@ group :development, :test do
   gem 'rspec-rails'
   gem "factory_girl_rails"
   gem 'database_rewinder'
+
+  gem 'turnip'
+
+  gem 'capybara'
+
 end
 
 group :doc do
