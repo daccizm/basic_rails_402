@@ -56,6 +56,8 @@ group :development, :test do
   gem 'turnip'
 
   gem 'capybara'
+  gem 'launchy'
+  gem 'poltergeist'
 
 end
 
